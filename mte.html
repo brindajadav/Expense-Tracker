@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Tracking Expense</title>
+    <link rel="stylesheet" href="mte.css">
+    <script src="mte.js" defer></script>
+</head>
+<body>
+    <h1  style="text-align: center;">MONTHLY DAILY EXPENSE</h1>
+    <h4>Track your money easily</h3>
+<div class="card">
+    <form>
+      <label>Monthly Salary</label>
+<input type="number" id="salary" placeholder="Enter your salary">
+
+<button onclick="getSalary()">Set Salary</button>
+    </form>
+  </div>
+<br>
+
+<table border="1">
+    <tr>
+        <th>Food</th>
+        <th>Transport</th>
+        <th>Rent</th>
+        <th>Saving</th>
+    </tr>
+
+    <tr>
+        <td id="foodBudget">0</td>
+        <td id="transportBudget">0</td>
+        <td id="rentBudget">0</td>
+        <td id="savingBudget">0</td>
+    </tr>
+</table>
+        <br>
+        <h3>Add today's expense </h3>
+<div class="expense-card">
+    <h2>Add Today's Expense</h2>
+    
+    <form>
+    
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+      </div>
+
+   
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select id="category">
+          <option value="food">Food</option>
+          <option value="transport">Transport</option>
+          <option value="rent">Rent</option>
+          <option value="saving">Saving</option>
+        </select>
+      </div>
+
+  
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" id="date" value="2026-09-16">
+      </div>
+
+  
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" id="description" placeholder="Enter description">
+      </div>
+
+  
+      <button type="submit" class="btn-submit">Add Expense</button>
+    </form>
+  </div>
+<table border="3x">
+    <thead><tr>
+        <th>Expense history</th>
+    </tr>
+    </thead>
+    <tr>
+        <td>date</td>
+        <td>Category</td> 
+        <td>Description</td>
+        <td>Amount</td>
+    </tr>
+    <tr>
+        <td>12 sep</td>
+<td> food</td>
+   
+        <td>lunch</td>
+
+   >
+    <td>500</td>
+    </tr>
+
+</table>
+<p>Total spend:2000</p>
+<p>remainig :18000</p>
+</body>
+</html>
