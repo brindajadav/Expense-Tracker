@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Book Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">📚 BookStore</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#books">Books</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="cart">
+            🛒 Cart: <span id="cartCount">0</span>
+        </div>
+    </header>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Welcome to Online Book Store</h1>
+            <p>Discover your next favourite book.</p>
+
+            <a href="#books" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+
+    <!-- Books -->
+    <section id="books">
+
+        <h2>Our Books</h2>
+
+        <!-- Search -->
+        <input
+            type="text"
+            id="search"
+            placeholder="Search for a book..."
+        >
+
+        <!-- Categories -->
+        <div class="categories">
+            <button onclick="filterBooks('All')">All</button>
+            <button onclick="filterBooks('Fiction')">Fiction</button>
+            <button onclick="filterBooks('Education')">Education</button>
+            <button onclick="filterBooks('Technology')">Technology</button>
+            <button onclick="filterBooks('Mystery')">Mystery</button>
+        </div>
+
+
+        <!-- Book Cards -->
+        <div class="book-container" id="bookContainer">
+
+            <div class="book" data-category="Fiction">
+                <div class="book-img">📖</div>
+                <h3>The Alchemist</h3>
+                <p>Paulo Coelho</p>
+                <h4>₹299</h4>
+                <button onclick="addToCart('The Alchemist',299)">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="book" data-category="Education">
+                <div class="book-img">📘</div>
+                <h3>Python Basics</h3>
+                <p>John Smith</p>
+                <h4>₹450</h4>
+                <button onclick="addToCart('Python Basics',450)">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="book" data-category="Technology">
+                <div class="book-img">💻</div>
+                <h3>Web Development</h3>
+                <p>James Anderson</p>
+                <h4>₹550</h4>
+                <button onclick="addToCart('Web Development',550)">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="book" data-category="Mystery">
+                <div class="book-img">🔍</div>
+                <h3>The Mystery House</h3>
+                <p>Robert Brown</p>
+                <h4>₹350</h4>
+                <button onclick="addToCart('The Mystery House',350)">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="book" data-category="Education">
+                <div class="book-img">📕</div>
+                <h3>Data Structures</h3>
+                <p>Mark Wilson</p>
+                <h4>₹500</h4>
+                <button onclick="addToCart('Data Structures',500)">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="book" data-category="Fiction">
+                <div class="book-img">📗</div>
+                <h3>Harry's Adventure</h3>
+                <p>David Clark</p>
+                <h4>₹399</h4>
+                <button onclick="addToCart('Harrys Adventure',399)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            Our Online Book Store provides a simple and convenient
+            platform for users to discover and purchase books online.
+            We offer books from different categories at affordable prices.
+        </p>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form onsubmit="sendMessage(event)">
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <textarea placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Online Book Store | All Rights Reserved</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
