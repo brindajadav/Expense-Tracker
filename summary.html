@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="mte.css ">
+   <script src="mte.js" defer></script>
+</head>
+<body>
+     <div class="top-nav">
+
+        <h2>Monthly Expense Tracker</h2>
+
+        <div>
+            <a href="index.html">Dashboard</a>
+            <a href="expense.html">Expense</a>
+            <a href="history.html">History</a>
+            <a href="summary.html">Summary</a>
+        </div>
+
+    </div>
+   
+    <div class="header-box">
+        <h1>📊 Monthly Summary</h1>
+        <p>See your monthly spending in one place</p>
+    </div>
+    <div class="summary-container">
+
+        <div class="summary-card">
+            <h3>💵 Total Budget</h3>
+            <p id="totalBudget">₹ 0</p>
+        </div>
+        <div class="summary-card">
+            <h3>💸 Total Spent</h3>
+            <p id="totalSpent">₹ 0</p>
+        </div>
+        <div class="summary-card">
+            <h3>💰 Remaining</h3>
+            <p id="totalRemaining">₹ 0</p>
+        </div>
+
+    </div>
+    <div class="table-section">
+
+        <h3>📊 Category Summary</h3>
+
+        <table class="expense-table">
+
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Budget</th>
+                    <th>Spent</th>
+                    <th>Remaining</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>🍔 Food</td>
+                    <td id="summaryFoodBudget">₹ 0</td>
+                    <td id="summaryFoodSpent">₹ 0</td>
+                    <td id="summaryFoodRemaining">₹ 0</td>
+                </tr>
+
+                <tr>
+                    <td>🚌 Transport</td>
+                    <td id="summaryTransportBudget">₹ 0</td>
+                    <td id="summaryTransportSpent">₹ 0</td>
+                    <td id="summaryTransportRemaining">₹ 0</td>
+                </tr>
+
+                <tr>
+                    <td>🏠 Rent</td>
+                    <td id="summaryRentBudget">₹ 0</td>
+                    <td id="summaryRentSpent">₹ 0</td>
+                    <td id="summaryRentRemaining">₹ 0</td>
+                </tr>
+
+                <tr>
+                    <td>🐷 Saving</td>
+                    <td id="summarySavingBudget">₹ 0</td>
+                    <td id="summarySavingSpent">₹ 0</td>
+                    <td id="summarySavingRemaining">₹ 0</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+    <div class="info-box">
+
+        <h3>💡 Spending Status</h3>
+
+        <p id="spendingStatus">
+            You are within your budget ✅
+        </p>
+
+    </div>
+
+</body>
+</body>
+</html>

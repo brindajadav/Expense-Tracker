@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Expense</title>
+
+    <link rel="stylesheet" href="mte.css">
+    <script src="mte.js" defer></script>
+</head>
+
+<body>
+    <div class="top-nav">
+
+        <h2>Monthly Expense Tracker</h2>
+
+        <div>
+            <a href="index.html">Dashboard</a>
+            <a href="expense.html">Expense</a>
+            <a href="history.html">History</a>
+            <a href="summary.html">Summary</a>
+        </div>
+
+    </div>
+    <div class="header-box">
+
+<h1>➕ Add Daily Expense</h1>
+
+        <p>Enter your daily spending</p>
+    </div>
+    <div class="middle-section">
+
+        <div class="add-expense-box">
+
+            <h3>➕ Add Daily Expense</h3>
+
+            <form class="expense-form">
+
+                <div class="form-row">
+
+                    <label>Amount</label>
+
+                    <input type="number" id="expenseAmount" placeholder="Enter amount" class="input-field">
+
+                </div>
+                <div class="form-row">
+
+                    <label>Category</label>
+
+                    <select id="expenseCategory" class="input-field">
+
+                        <option value="">Select category</option>
+<option value="food">Food</option>
+ <option value="transport">Transport</option>
+  <option value="rent">Rent</option>
+<option value="saving">Saving</option>
+
+                    </select>
+                </div>
+                <div class="form-row">
+
+                    <label>Date</label>
+
+                    <input type="date"id="expenseDate"class="input-field">
+  </div>
+<div class="form-row">
+  <label>Description</label>
+<input type="text"
+                 id="expenseDescription"
+                           placeholder="Enter description"
+                           class="input-field">
+ </div>
+  <button type="button"class="btn submit-btn" onclick="addExpense()"> Add Expense/button>
+
+            </form>
+
+        </div>
+        <div class="side-info">
+ <div class="info-box">
+ <h3>💡 Quick Tip</h3>
+ <p>  Track every expense, even small ones.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
